@@ -7,3 +7,9 @@ body {
   max-width: 900px;
   margin: 0 auto;
 }
+
+#user-list {
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}

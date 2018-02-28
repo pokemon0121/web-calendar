@@ -21,7 +21,34 @@
     <meta charset='utf-8' />
   </head>
   <body>
-    <div id='calendar'></div>
+    <div id='user-list'>
+      <ul class="list-group">
+        <li class="list-group-item form-group">
+          <div class="row">
+            <div class="col-10">
+              <form id='add-user'>
+                <div class="row">
+                  <div class="col-3 align-self-center">
+                    Users
+                  </div>
+                  <div class="col-6">
+                    <input disabled id="input-email" type="email" class="form-control" placeholder="Add a new user?">
+                  </div>
+                  <div class="col-3">
+                    <button disabled id="submit-email" type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div id="auth-btn" class="col-2">
+              <button id="authorize-button" class="btn btn-danger">Google Signin</button>
+              <button id="signout-button" class="btn btn-danger d-none">Google Signout</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div id='calendar' class="d-none"></div>
     <!-- Modal -->
 
     <div class="modal fade" id="bookEventModal" tabindex="-1" role="dialog" aria-labelledby="bookEventModal" aria-hidden="true">
@@ -37,7 +64,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button id="create-event" type="button" class="btn btn-primary">Create event</button>
           </div>
         </div>
       </div>
