@@ -270,6 +270,7 @@ function testUser(user) {
           'not valid user or no access to his/her freebusy time: ',
           user
         );
+        alert('not valid user or no access to his/her freebusy time: ' + user);
         return;
       }
       // we can access this user's freebusy times
